@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.logo {
+    font-family: 'Rubik', sans-serif;
+}
+body.light {
+    --color: #212121;
+    --bg-color: white;
+    --btn-hover-color: #f7f7f7;
+    --topnav-bg-color: #fafafa;
+    --image-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+body.dark {
+    --color: #efefef;
+    --bg-color: #333333;
+    --btn-hover-color: #333333;
+    --topnav-bg-color: var(--bg-color);
+    --image-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+body {
+    color: var(--color);
+    background-color: var(--bg-color);
+    font-family: 'PT Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+p {
+    font-size: 16px;
+}
+.drawer-icon:hover, .drawer-icon:active {
+    background-color: var(--btn-hover-color);
+}
+#nav {
+    background-color: var(--topnav-bg-color);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/*#232733*/
