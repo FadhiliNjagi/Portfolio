@@ -37,9 +37,7 @@ export default {
 .image-of-me {
     height: 280px;
     margin-bottom: 10px;
-    /* border-radius: 2px; */
     background-color: #CFD8DC;
-    /* box-shadow: var(--image-shadow); */
 }
 .image-of-me-container {
     width: fit-content;
@@ -50,9 +48,6 @@ export default {
     margin-top: 10px;
 }
 @media only screen and (min-width: 600px) {
-    /* .image-of-me {
-        height: 350px;
-    } */
     .background-section {
         display: flex;
         flex-direction: row;

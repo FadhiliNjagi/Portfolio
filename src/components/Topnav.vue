@@ -7,10 +7,12 @@
             <span class="w3-button mr-2" @click="scrollTo('projects')">My work</span>
             <a href="mailto:fadhilinjagi@gmail.com"><span class="secondary-btn w3-button">Contact Me</span></a>
         </div>
-        <div class="d-flex flex-row align-items-center justify-content-end theme-switch">
-            <b-icon icon="sun" class="mr-2 mt-1" font-scale="1.5" variant="secondary">Light mode</b-icon>
-            <b-form-checkbox switch size="lg" v-model="checked"></b-form-checkbox>
-            <b-icon icon="moon" class="ml-0 mt-1" font-scale="1.4">Light mode</b-icon>
+        <div class="theme-switch d-flex flex-row align-items-center justify-content-end">
+            <div class="theme-switch-track" @click="toggleTheme()">
+                <span class="theme-switch-thumb">
+                    <b-icon :icon="themeIcon" font-scale="1">Light mode</b-icon>
+                </span>
+            </div>
         </div>
     </div>
 </template>
@@ -27,6 +29,9 @@ export default {
             document.getElementById(id).scrollIntoView(
                 {behavior: 'smooth'}
             )
+        },
+        toggleTheme(){
+            this.checked = !this.checked
         }
     },
     watch: {
@@ -39,6 +44,14 @@ export default {
                 document.body.classList.remove('light')
                 document.body.classList.add('dark')
             }
+        }
+    },
+    computed: {
+        themeIcon() {
+            if (this.checked)
+                return "moon"
+            else
+                return "sun"
         }
     }
 }
@@ -92,6 +105,34 @@ body.dark #nav {
 }
 .theme-switch {
     flex-grow: 2;
+}
+.theme-switch-track {
+    width: 45px;
+    height: 18px;
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: left;
+    cursor: pointer;
+}
+body.dark .theme-switch-track {
+    justify-content: right;
+    background-color: #ccc;
+}
+.theme-switch-thumb {
+    background-color: #C5CAE9;
+    padding: 0px 4px;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 2;
+    align-self: center;
+}
+body.light .theme-switch-thumb {
+    color: #444;
+}
+body.dark .theme-switch-thumb {
+    background-color: #858a8f;
 }
 @media only screen and (min-width: 600px) {
     .drawer-icon {

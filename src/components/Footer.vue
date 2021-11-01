@@ -4,7 +4,7 @@
             <a href="https://instagram.com/fadhili_njagi"><b-icon icon="instagram" font-scale="1.8" class="mr-3" title="Instagram: @fadhili_njagi"></b-icon></a>
             <a href="https://github.com/FadhiliNjagi"><b-icon icon="github" font-scale="1.8" class="mr-3" title="Github: @FadhiliNjagi"></b-icon></a>
             <a href="https://twitter.com/Fadhili76817909"><b-icon icon="twitter" font-scale="1.8" class="mr-3" title="Twitter: @Fadhili76817909"></b-icon></a>
-            <a href="mailto:fadhilinjagi@gmail.com"><b-icon icon="envelope" font-scale="1.8" title="Email: fadhilinjagi@gmail.com"></b-icon></a>
+            <a href="https://www.linkedin.com/in/fadhili-njagi-b50251189/"><b-icon icon="linkedin" font-scale="1.8" title="LinkedIn: Fadhili Njagi"></b-icon></a>
         </div>
         <p class="mt-1">Fadhili Njagi &copy; {{ new Date().getFullYear() }}<br/>
         Kitengela, Nairobi Kenya. <br/>
