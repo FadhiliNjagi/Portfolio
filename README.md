@@ -1,3 +1,3 @@
 # portfolio
 
-https:://fadhilinjagi.netflify.app
+[fadhilinjagi.netflify.app](https:://fadhilinjagi.netflify.app)
